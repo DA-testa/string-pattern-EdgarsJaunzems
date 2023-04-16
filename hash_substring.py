@@ -4,11 +4,11 @@ def read_input():
     # this function needs to aquire input both from keyboard and file
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
     inp = input()
-    if "I" in inp
+    if "I" in inp:
         rinda1=input().strip()
         rinda2=input().strip()
         return(rinda1,rinda2)
-    if "F" in inp
+    if "F" in inp:
         with open('./tests/06') as test:
             t1=test.readline().strip()
             t2=test.readline().strip()
@@ -44,4 +44,3 @@ def get_occurrences(pat, text):
 # this part launches the functions
 if __name__ == '__main__':
     print_occurrences(get_occurrences(*read_input()))
-
